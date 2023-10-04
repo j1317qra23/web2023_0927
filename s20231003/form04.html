@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR 表單</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        legend {
+            text-align: center;
+            font-size: 24px;
+            color: crimson;
+        }
+
+    
+        h4 {
+            font-size: 20px;
+            color: crimson;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 75%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        select {
+            background-color: #fff;
+        }
+
+        .button-group {
+            text-align: center;
+        }
+
+        input[type="reset"],
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: crimson;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .text-red {
+            color: crimson;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .flex-item {
+            flex: 1;
+            margin-right: 30px;
+        }
+        
+        body {
+            background-image: url(https://images.unsplash.com/photo-1696229746721-5c96fafe3ca6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1922&q=80);
+            /* 替换 'your-background-image.jpg' 为您的背景图片文件路径 */
+            background-size: cover;
+            /* 使背景图片覆盖整个页面 */
+        }
+        .w-30{
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <fieldset>
+            <legend>HR 表單</legend>
+            <div class="flex-container">
+                <div class="flex-item">
+                    <label>填表日期</label>
+                    <input type="date" value="2023-01-01">
+                </div>
+                <div class="flex-item">
+                    <label for="name">姓名</label>
+                    <input id="name" type="text">
+                </div>
+                <div class="flex-item">
+                    <label for="mobile">電話</label>
+                    <input id="mobile" type="text">
+                </div>
+                <div class="">
+                    <label for="address">地址</label>
+                    <input type="text">
+                </div>
+            </div>
+            <h4 class="text-red">通勤方式</h4>
+            <select name="ways" id="way" class="w-30">
+                <option value="apple">請選擇</option>
+                <option value="mrt">捷運</option>
+                <option value="bus">公車</option>
+                <option value="scooter">機車</option>
+                <option value="bike">腳踏車</option>
+            </select>
+            <h4 class="text-red">婚姻狀態</h4>
+            <div class="flex-container">
+                <div class="flex-item">
+                    <input type="radio" name="myradio" id="item1">
+                    <label for="item1">未婚</label>
+                </div>
+                <div class="flex-item">
+                    <input type="radio" name="myradio" id="item2">
+                    <label for="item2">結婚</label>
+                </div>
+                <div class="flex-item">
+                    <input type="radio" name="myradio" id="item3">
+                    <label for="item3">已婚</label>
+                </div>
+            </div>
+            <h4 class="text-red">技能</h4>
+            <div class="flex-container">
+                <div class="flex-item">
+                    <input type="checkbox" name="mycheckbox" id="skill1">
+                    <label for="skill1">Excel</label>
+                </div>
+                <div class="flex-item">
+                    <input type="checkbox" name="mycheckbox" id="skill2">
+                    <label for="skill2">Word</label>
+                </div>
+                <div class="flex-item">
+                    <input type="checkbox" name="mycheckbox" id="skill3">
+                    <label for="skill3">HTML</label>
+                </div>
+                <div class="flex-item">
+                    <input type="checkbox" name="mycheckbox" id="skill4">
+                    <label for="skill4">PHP</label>
+                </div>
+                <div class="flex-item">
+                    <input type="checkbox" name="mycheckbox" id="skill5">
+                    <label for="skill5">JavaScript</label>
+                </div>
+                <div class="flex-item">
+                    <input type="checkbox" name="mycheckbox" id="skill6">
+                    <label for="skill6">Python</label>
+                </div>
+                <div class="flex-item">
+                    <input type="checkbox" name="mycheckbox" id="skill7">
+                    <label for="skill7">Git</label>
+                </div>
+                <div class="flex-item">
+                    <input type="checkbox" name="mycheckbox" id="skill8">
+                    <label for="skill8">GitHub</label>
+                </div>
+            </div>
+            <h4 class="text-red">對公司的提問</h4>
+            <textarea name="備註" id="" cols="30" rows="5"></textarea>
+            <div class="button-group">
+                <input class="text-red" type="reset" value="重整">
+                <input class="text-red" type="submit" value="送出">
+            </div>
+            <h4 class="text-red">自傳 </h4>
+            <textarea name="備註" id="" cols="30" rows="5"></textarea>
+            <div class="button-group">
+                <input class="text-red" type="reset" value="重整">
+                <input class="text-red" type="submit" value="送出">
