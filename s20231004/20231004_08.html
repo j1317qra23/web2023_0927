@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
+        body {
+            background-image: url(https://cdn.pixabay.com/photo/2020/10/01/07/22/dwarf-rabbit-5617738_1280.jpg);
+            background-size: 100px 100px;
+        }
+
         .box {
             /* 高度 寬度要先設定 */
             background-image: url("https://picsum.photos/id/20/600/400");
@@ -16,8 +20,16 @@
             height: 800px;
             background-color: blanchedalmond;
             /* background-repeat:no-repeat */
-
-
+        }
+        .clickDiv{
+            background-image: url(https://media.istockphoto.com/id/1139514319/photo/cute-marmot-in-the-alpine.jpg?s=2048x2048&w=is&k=20&c=fmpTByLKjbQkxN8rosxZppL2_EC-VqGZUDgg70KItwQ=);
+            background-size: 100px 100px;
+            width: 100px;
+            height: 100px;
+        }
+        .aImg{
+            width:100px;
+            height: 100px;
         }
     </style>
 </head>
@@ -32,7 +44,22 @@
         <h3>background-image</h3>
         <div class="box">
 
-        </div>
+    </div>
+    <div class="container">
+        <h3>link bg-image</h3>
+        <a href="">
+            <div class="clickDiv">
+
+            </div>
+        </a>
+    </div>
+    <div class="container">
+        <h3>link img</h3>
+        <a href="">
+            <img src="https://media.istockphoto.com/id/1139514319/photo/cute-marmot-in-the-alpine.jpg?s=2048x2048&w=is&k=20&c=fmpTByLKjbQkxN8rosxZppL2_EC-VqGZUDgg70KItwQ=" alt="" class="aImg">
+        </a>
+    </div>
+
     </div>
 </body>
 
