@@ -112,26 +112,52 @@
                 </div>
                 <div class="flex-item">
                     <label for="name">姓名</label>
-                    <input id="name" type="text">
+                    <input id="name" type="text" value="陳xx">
                 </div>
                 <div class="flex-item">
                     <label for="mobile">電話</label>
-                    <input id="mobile" type="text">
+                    <input id="mobile" type="text" value="09xx">
                 </div>
                 <div class="">
                     <label for="address">地址</label>
-                    <input type="text">
+                    <input type="text" value="台北市...">
                 </div>
             </div>
-            <h4 class="text-red">通勤方式</h4>
-            <select name="ways" id="way" class="w-30">
-                <option value="">請選擇</option>
-                <option value="mrt">捷運</option>
-                <option value="bus">公車</option>
-                <option value="scooter">機車</option>
-                <option value="bike">腳踏車</option>
-            </select>
-            
+            <div class="flex-container">
+            <div class="flex-item">
+                <h4 class="text-red">通勤方式</h4>
+                <select name="ways" id="way" class="w-30">
+                    <option value="">請選擇</option>
+                    <option value="mrt">捷運</option>
+                    <option value="bus">公車</option>
+                    <option value="scooter">機車</option>
+                    <option value="bike">腳踏車</option>
+                </select>
+            </div>
+            <div class="flex-item">
+                <h4 class="text-red">學歷</h4>
+                <select name="ways" id="way" class="w-30">
+                    <option value="">請選擇</option>
+                    <option value="">國中</option>
+                    <option value="">高中</option>
+                    <option value="">大學</option>
+                    <option value="">碩士</option>
+                </select>
+            </div>
+            <div class="flex-item">
+                <h4 class="text-red">年齡</h4>
+                <select name="ways" id="way" class="w-30">
+                    <option value="">請選擇</option>
+                    <option value="mrt">20-30</option>
+                    <option value="bus">30-40</option>
+                    <option value="scooter">40-50</option>
+                    <option value="bike">50-60</option>
+                </select>
+            </div>
+        </div>
+
+
+
             <h4 class="text-red">婚姻狀態</h4>
             <div class="flex-container">
                 <div class="flex-item">
@@ -194,8 +220,8 @@
                 <input class="text-red" type="reset" value="重整">
                 <input class="text-red" type="submit" value="送出">
                 <div class="container">
-            <form action="" method="post" enctype="multipart/form-data">
-                <h4 class="flex-item">畢業證書電子檔</h4>
-                <input type="file"  name="" id="" class="flex-item" >
-            </form>
+                    <form action="" method="post" enctype="multipart/form-data">
+                        <h4 class="flex-item">畢業證書電子檔</h4>
+                        <input type="file" name="" id="" class="flex-item">
+                    </form>
                 </div>
