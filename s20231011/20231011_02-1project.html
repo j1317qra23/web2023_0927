@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* 去除空白 */
+            margin: 0;
+            /* border不會超出 */
+            box-sizing: border-box;
+        }
+
+        .nav {
+            width: 100%;
+            height: 15vh;
+            background-color: aliceblue;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            height: 95vh;
+            margin: auto;
+            background-color: rgb(2, 140, 226);
+            /* background-blend-mode:multiply; */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        table,
+        tr,
+        td {
+            /* border: 1px solid black; */
+            border-collapse: collapse;
+        }
+
+        table {
+            width:100%;
+            height: 100%;
+        }
+
+        td {
+            width: 33%;
+            text-align: center;
+            
+        }
+
+        .box {
+            width: 100%;
+            height: 100%;
+            /* background-color: whitesmoke; */
+            /* opacity: 0.8; */
+        }
+
+        img {
+            border: 1px solid black;
+            border-radius: 20px 20px;
+            
+        }
+
+        .box1 {
+
+            background-image: url(./jjnamecover.jpg);
+
+        }
+
+        .box2 {
+
+
+            background-image: url(./02.jpg);
+
+        }
+
+        .box3 {
+
+            background-image: url(./03.webp);
+
+        }
+
+        h2 {
+            text-shadow: 5px 5px 10px black;
+        }
+
+        p {
+            /* text-shadow: 5px 5px 10px black; */
+            
+            background-color: aliceblue;
+            font-size: 20px;
+            border: 1px solid black;
+            border-radius: 25px;
+        }
+
+        iframe {
+            width: 95%;
+            height: 50%;
+            border: 5px solid lightpink;
+        }
+
+        a {
+            /* 調整高度 */
+            display: inline-block;
+            font-size: 40px;
+            /* 跟上面的距離 */
+            margin-top: 10px;
+            /* 跟左邊的距離 */
+            margin-left: 30px;
+            /* 去除a tag 下底線 */
+            text-decoration: none;
+            color: aliceblue;
+            background-color: lightskyblue;
+        }
+
+        #top {
+            /* 固定 */
+            position: fixed;
+            right: 100px;
+            bottom: 100px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="nav">
+        <td><a href="#c01">img</a> &nbsp;</td>
+        <td><a href="#c02">youtube</a> &nbsp;</td>
+        <td> <a href="#c03">map</a> &nbsp;</td>
+    </div>
+    <br>
+    <div class="container box1">
+        <div class="box">
+            <div id="c01"></div>
+            <table>
+                <tr>
+                    <td>
+                        <h2> Lorem, ipsum dolor. </h2>
+                        <img src="./02.PNG" alt="">
+                        <p>
+                            Lorem ipsum dolor sit amet!
+                        </p>
+                    </td>
+                    <td>
+                        <h2> Lorem, ipsum dolor. </h2>
+                        <img src="./02.PNG" alt="">
+                        <p>
+                            Lorem ipsum dolor sit amet !
+                        </p>
+                    </td>
+                    <td>
+                        <h2> Lorem, ipsum dolor. </h2>
+                        <img src="./02.PNG" alt="">
+                        <p>
+                            Lorem ipsum dolor sit amet !
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="container box2">
+            <div class="box">
+                <div id="c02"></div>
+                <table>
+                    <tr>
+                        <td>
+
+                            <iframe 
+                                src="https://www.youtube.com/embed/BHlnhRw26FE?si=L9hII01sc0nnCH-w"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+
+                        </td>
+                        <td>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum facere possimus libero nisi
+                            odio quo saepe eveniet accusamus ut ad delectus, unde reiciendis culpa, vel minima itaque
+                            molestias, pariatur porro animi quisquam ea expedita distinctio in excepturi. Eos doloremque
+                            assumenda error nesciunt culpa alias debitis nobis, repellat perspiciatis porro itaque.
+
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="container box3">
+            <div class="box">
+                <div id="c03"></div>
+                <table>
+                    <tr>
+                        <td>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.697627639118!2d121.41692282537694!3d25.044333577809706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bec9ad74b1%3A0xa639904a89f26435!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y5rOw5bGx6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1696995113703!5m2!1szh-TW!2stw"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </td>
+                        <td>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa porro minus eligendi
+                            doloremque
+                            dolorem libero eaque vero suscipit quisquam aliquam nostrum nemo maxime ea modi explicabo
+                            commodi,
+                            numquam ad obcaecati ducimus enim quo accusamus qui recusandae. Sapiente quae, delectus enim
+                            molestias consectetur, dignissimos porro quos veritatis recusandae molestiae repudiandae
+                            harum.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <a href="#" id="top">top</a>
+</body>
+
+</html>
