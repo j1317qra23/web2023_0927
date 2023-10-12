@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        nav{
-          
+        nav {
+            width: 100%;
             text-align: center;
         }
-        .box1{
-            width: 30%;
-            height: 30vh;
-            background-color: aqua;
-            background-image: url(./擷取.JPG);
-            background-repeat: no-repeat;
-        }
-        .box1:hover{
-       
-            background-image: url(./音符.png);
-            background-repeat: no-repeat;
-            transition-duration: 2s;
-        }
-        .nav>a{
+        .nav>a {
             margin-left: 20px;
-           text-decoration: none;
+            text-decoration: none;
             color: rgb(216, 124, 3);
             font-size: 20px;
             background-color: aliceblue;
+            border-radius: 10px;
         }
-        a:hover{
-            
+        .nav>a:hover {
+
             color: green;
             font-size: 50px;
             transition-duration: 1s;
             background-color: rgb(4, 131, 243);
             border-radius: 10px;
         }
+        .box1 {
+            display: inline-block;
+            margin: auto;
+            width: 30%;
+            height: 30vh;
+            background-image: url(./擷取.JPG);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50px;
+        }
+
+        .box1:hover {
+
+            background-image: url(./音符.png);
+            transition-duration: 1s;
+            border-radius: 10px;
+        }
+
       
-        
+
+    
     </style>
 </head>
+
 <body>
     <nav class="nav">
         <a href="#">
@@ -50,10 +59,16 @@
             <a href="#item3">other</a> &nbsp; &nbsp;
     </nav>
     <div class="container">
-    <div class="box1"></div>
-    <div class="box2"></div>
-    <div class="box3"></div>
-   
-</div>
+        <a href="http://tw.yahoo.com">
+            <div class="box1"></div>
+
+            <a href="http://tw.yahoo.com">
+                <div class="box1"></div>
+                <a href="http://tw.yahoo.com">
+                    <div class="box1"></div>
+                </a>
+
+    </div>
 </body>
+
 </html>
