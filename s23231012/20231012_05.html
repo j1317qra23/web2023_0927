@@ -1,25 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .divA div{
-            color: aqua;
+        .container {
+            border: 1px solid blueviolet;
+            border-radius: 1px;
+            text-align: center;
+            background-image: url(./擷取.JPG);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+        }
+
+        .box1>h1,
+        .box1>h2,
+        .box1>h3 {
+
+            color: rgb(240, 152, 37);
+        }
+
+
+
+
+        .box2>h1,
+        .box2>h2,
+        .box2>h3 {
+            color: rgb(34, 140, 233);
+        }
+
+
+        .box3>h1,
+        .box3>h2,
+        .box3>h3 {
+            color: rgb(42, 240, 35);
+        }
+
+        .header>h1 {
+            background-image: url(./01.JPG);
+            background-repeat: repeat;
+            background-position: center;
+           
+            text-align: center;
+            color: rgb(4, 126, 233);
+        }
+
+        .nav {
+           
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .a {
+            margin: auto;
+            text-align: center;
+        }
+        p{
+            font-weight: bold
         }
     </style>
 </head>
+
 <body>
+    <header class="header">
+        <h1>日本流行音樂</h1>
+    </header>
+    <nav class="nav">
+        <a href="#">
+
+            <a href="#item1">残響散歌</a> &nbsp; &nbsp;
+            <a href="#item2">Kataomoi</a> &nbsp; &nbsp;
+            <a href="#item3">Hoshikuzu Venus</a> &nbsp; &nbsp;
+    </nav>
+
     <div class="container">
-    <div class="divA"></div>
-    divA
-    <div class="divA1"></div>
-    &nbsp;divA1
-    <div class="divA11"></div>
-    &nbsp;&nbsp;divA11
-    <div class="divA111"></div>
-    &nbsp;&nbsp;&nbsp;divA111
-</div>
+        <div id="item1"></div>
+        <div class="container box1">
+
+            <h1>歌名:残響散歌</h1>
+            <h2>作者:Aimer</h2>
+            <h3>作曲:Aimer</h3>
+            <p>
+                Da-ta-ra, ta-ra-tat ta <br>
+                Da-ra-tat ta, da-ra-tat ta<br>
+                Da-ta-ra, ta-ra-tat ta<br>
+                Da-ra-tat ta, da-ra-tat ta-ra<br>
+                誰が袖に咲く幻花 ただそこに藍を落とした<br>
+                派手に色を溶かす夜に 銀朱の月を添えて<br>
+                転がるように風を切って 躓くごとに強くなった<br>
+                光も痛みも怒りも全部 抱きしめて<br>
+            </p>
+        </div>
+
+
+
+    </div>
+    <div class="container">
+        <div id="item2"></div>
+        <div class="container box2">
+            <h1>歌名:Kataomoi</h1>
+            <h2>作者:Aimer</h2>
+            <h3>作曲:aimerrhythm</h3>
+            <p>
+                例えば 君の 顔に昔より<br>
+                シワが 増えても それでも良いんだ<br>
+                僕が ギターを 思うように 弾けなくなっても<br>
+                心の歌は君で溢れているよ<br>
+                高い声も 出せずに 思い通り歌えない<br>
+                それでも頷きながら一緒に歌ってくれるかな<br>
+                割れんばかりの拍手も 響き渡る歓声もいらない<br>
+                君だけ わかってよ わかってよ<br>
+                Darling 夢が叶ったの<br>
+                お似合いの言葉が見つからないよ<br>
+                Darling 夢が叶ったの<br>
+            </p>
+        </div>
+
+    </div>
+    <div class="container">
+        <div id="item3"></div>
+        <div class="container box3">
+            <h1>歌名:Hoshikuzu Venus</h1>
+            <h2>作者:Aimer</h2>
+            <h3>作曲:aimerrhythm</h3>
+            <p> 笑っていたのは "強がり" からじゃなく<br>
+                泣き顔なんか もう見たくないでしょ?<br>
+                星屑みたいな ひと粒の出会い<br>
+                サヨナラ?<br>
+                最後の言葉が見つからない<br>
+                そうだよ 私は平気だよ 強いから<br>
+                顔あげて「ゴメンネ」って もう言わないで ツライから<br>
+            </p>
+        </div>
+    </div>
+    <a href="#">top</a>
 </body>
+
 </html>
