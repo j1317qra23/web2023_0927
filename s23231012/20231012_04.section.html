@@ -4,43 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>台北美食</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        header {
+            background-color: aliceblue;
+            height: 10vh;
+            text-align: center;
+        }
+
+        .nav {
+            background-color: azure;
+            text-align: center;
+        }
+
+        .nav>a {
+            text-decoration: none;
+            color: black;
+            text-align: center;
+
+        }
+        h3{
+            text-align: center;
+        }
+        .main{
+            width: 100%;
+            background-image: url(./背景.jpg);
+        }
+
+        .container {
+            background-color: antiquewhite;
+            width: 80%;
+            height: 80vh;
+            margin: auto;
+        }
+
+        footer {
+            text-align: center;
+        }
+        .pic-a{
+            width: 500px;
+            height: 50vh;
+        }
+       
+    </style>
 </head>
 
 <body>
-    <nav>
-        <a href="#item1">item1</a>
-        <a href="#item2">item2</a>
-        <a href="#item3">item3</a>
-    </nav>
-    <header>
-        <h1>web title</h1>
+    <header class="header">
+        <h1>台北美食</h1>
     </header>
-    <main>
+    <nav class="nav">
+        <a href="#item1">拉麵</a>
+        <a href="#item2">豬排</a>
+        <a href="#item3">火鍋</a>
+    </nav>
+
+    <main class="main">
         <div id="item1"></div>
         <section class="container">
-            <h3>item1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus recusandae debitis. Quidem quis
-                dicta numquam esse explicabo assumenda odio.
+            <h3>拉麵</h3>
+            <img src="./拉麵.PNG" alt="">
+            <img src="./拉麵2.PNG" alt="">
+            <p>「大和家」也是「橫濱家系」的名店！雖然同為橫濱家系，大和家的湯頭又更濃厚一些，不習慣重口味湯頭的人可以選擇淡一點的口味，比較不容易膩口～有醬油和鹽味可以選擇，超高人氣的黃金醬油拉麵是必吃品項，湯中的菠菜可說是靈魂，清爽甘甜的蔬菜，瞬間將油膩的湯頭變得輕盈！
             </p>
         </section>
         <div id="item2"></div>
         <section class="container">
-            <h3>item2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus recusandae debitis. Quidem quis
-                dicta numquam esse explicabo assumenda odio.
+            <h3>豬排</h3>
+            <img src="./豬排.PNG" alt="">
+            <img class="pic-a"src="./豬排2.PNG" alt="">
+            <p>全台目前已有多家分店，今天介紹位於美麗華的靜岡勝政日式豬排，雖位於美食街的樓層，但有著獨立的店面及座位區，不用跟其他人搶佔美食街座位，真是太棒了！純日式風格的裝潢，厚厚一大本的菜單，打開來看裡頭的菜色類型琳瑯滿目。使用台灣南投的香草豬，肉質Q彈，帶有淡淡的香草味。有別於一般豬肉的口感，酥炸後有著豐富甜美的滋味，粉紅色的色澤更是最完美的熟度！小編點的香草豬腰內豬排套餐，酥軟又入口即化，超厚的厚度，讓愛吃肉的小編大呼過癮。套餐除了比手掌還大的豬排，附加的三樣小菜、高麗菜絲沙拉、味噌湯、茶碗蒸及特選的越光米白飯，這樣的套餐份量組合太豐盛了，多到會吃不完呢。強烈推薦還沒吃過的朋友，一定要來試試「夢幻豬排」！
             </p>
         </section>
         <div id="item3"></div>
         <section class="container">
-            <h3>item3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus recusandae debitis. Quidem quis
-                dicta numquam esse explicabo assumenda odio.
+            <h3>火鍋</h3>
+            <img src="./火鍋.PNG" alt="">
+            <img src="./火鍋2.PNG" alt="" srcset="">
+            <p>第一次知道台北火鍋【肉老大頂級肉品涮涮鍋】是看到朋友打卡浮誇的肉山金字塔還有大份量肉盤，真的很符合“肉老大”三個字，肉老大菜單提供多種大份量肉盤和海鮮的組合，目前還有打卡送肉活動，肉肉控和海鮮控都可以滿足。
             </p>
         </section>
     </main>
-    <footer>
-
+    <footer class="footer">
+        版權宣告 美食部落客
     </footer>
 </body>
 
