@@ -20,10 +20,10 @@
             width: 100%;
         }
         td{
-            height: 30px;
+            height: 20px;
         }
    .bg-pink{
-    background-color: lightpink;
+    background-color: antiquewhite;
    }
    .bg-blue{
     background-color: rgb(144, 208, 233);
@@ -39,86 +39,103 @@
         color: rgb(231, 12, 12);
     }
     .text-right{
-        text-align: center;
+        text-align: right;
        
         
     }
     .text-right > a{
         text-decoration: none;
         font-size: 24px;
+       
     }
     .text-right > a:hover {
         color: red; /*鼠标悬停时改变颜色*/
     }
+    td > a:hover {
+        color: red; /*鼠标悬停时改变颜色*/
+    }
+    h1{
+        text-align: center;
+    }
+
     </style>
 </head>
 
 <body>
     <div class="container text-right">
-        <h3>student list</h3>
+        <h1>student list</h1>
         <a href="./create.html">add &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-        <a href="./edit.html">edit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-        <a href="./del.html">delete &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+      
         <table>
             <tr class="bg-pink">
                 <th>id</th>
                 <th>name</th>
                 <th>mobile</th>
                 <th>pic</th>
+                <th>oprate</th>
             </tr>
             <tr class="bg-blue">
                 <td>1</td>
                 <td><a href="./edit.html?id=1">amy</a></td>
                 <td>0911-111-111</td>
                 <td><img src="https://picsum.photos/id/20/100/100" alt="">amy.jpg</td>
+                <td><a href="./edit.html">修改</a> /<a href="./del.html">刪除</a></td>
             </tr>
             <tr>
                 <td>2</td>
                 <td><a href="./edit.html?id=2">bob</a></td>
                 <td>0912345678</td>
-                <td>bob.jpg</td>
+                <td><img src="https://picsum.photos/seed/picsum/100/100" alt="">bob.jpg</td>
+                <td><a href="./edit.html">修改</a> /<a href="./del.html">刪除</a></td>
             </tr>
             <tr class="bg-blue">
                 <td>3</td>
                 <td><a href="./edit.html?id=3">cat</a></td>
                 <td>0933-333-333</td>
-                <td>cat.jpg</td>
+                <td><img src="https://picsum.photos/id/20/100/100" alt="">cat.jpg</td>
+                <td><a href="./edit.html">修改</a> /<a href="./del.html">刪除</a></td>
             </tr>
             <tr>
                 <td>1</td>
                 <td><a href="./edit.html?id=4">amy</a></td>
                 <td>0911-111-111</td>
-                <td>amy.jpg</td>
+                <td><img src="https://picsum.photos/id/20/100/100" alt="">amy.jpg</td>
+                <td><a href="./edit.html">修改</a> /<a href="./del.html">刪除</a></td>
             </tr>
             <tr class="bg-blue">
                 <td>2</td>
                 <td><a href="./edit.html?id=5">bob</a></td>
                 <td>0912345678</td>
-                <td>bob.jpg</td>
+                <td><img src="https://picsum.photos/id/20/100/100" alt="">bob.jpg</td>
+                <td><a href="./edit.html">修改</a> /<a href="./del.html">刪除</a></td>
             </tr>
             <tr>
                 <td>3</td>
                 <td><a href="./edit.html?id=6">cat</a></td>
                 <td>0933-333-333</td>
-                <td>cat.jpg</td>
+                <td><img src="https://picsum.photos/id/20/100/100" alt="">cat.jpg</td>
+                <td><a href="./edit.html">修改</a> /<a href="./del.html">刪除</a></td>
             </tr>
             <tr class="bg-blue">
                 <td>1</td>
                 <td><a href="./edit.html?id=7">amy</a></td>
                 <td>0911-111-111</td>
-                <td>amy.jpg</td>
+                <td><img src="https://picsum.photos/id/20/100/100" alt="">amy.jpg</td>
+                <td><a href="./edit.html">修改</a> /<a href="./del.html">刪除</a></td>
             </tr>
             <tr>
                 <td>2</td>
                 <td><a href="./edit.html?id=8">bob</a></td>
                 <td>0912345678</td>
-                <td>bob.jpg</td>
+                <td><img src="https://picsum.photos/id/20/100/100" alt="">bob.jpg</td>
+                <td><a href="./edit.html">修改</a> /<a href="./del.html">刪除</a></td>
             </tr>
-            <tr>
+            <tr class="bg-blue">
                 <td>3</td>
                 <td><a href="./edit.html?id=9">cat</a></td>
                 <td>0933-333-333</td>
-                <td>cat.jpg</td>
+                <td><img src="https://picsum.photos/id/20/100/100" alt="">cat.jpg</td>
+                <td><a href="./edit.html">修改</a> /<a href="./del.html">刪除</a></td>
             </tr>
         </table>
     </div>
