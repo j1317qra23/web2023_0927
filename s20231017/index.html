@@ -11,7 +11,7 @@
             margin: auto;
             margin-top: 30px;
         }
-        table,tr,td{
+        table,tr,td,th{
             border: 1px solid black;
             border-collapse: collapse;
         }
@@ -19,14 +19,14 @@
             width: 80%;
         }
         td{
-            height: 5vh;
+            height: 30px;
         }
-        tr:nth-child(odd) {
-        background-color: rgb(129, 216, 245); /* 基數行的底色 */
-    }
-    tr:nth-child(even) {
-        background-color: rgb(181, 238, 164); /* 偶數行的底色 */
-    }
+   .bg-pink{
+    background-color: lightpink;
+   }
+   .bg-blue{
+    background-color: rgb(144, 208, 233);
+   }
     </style>
 </head>
 
@@ -34,13 +34,13 @@
     <div class="container">
         <h3>student list</h3>
         <table>
-            <tr>
-                <td>id</td>
-                <td>name</td>
-                <td>mobile</td>
-                <td>pic</td>
+            <tr class="bg-pink">
+                <th>id</th>
+                <th>name</th>
+                <th>mobile</th>
+                <th>pic</th>
             </tr>
-            <tr>
+            <tr class="bg-blue">
                 <td>1</td>
                 <td>amy</td>
                 <td>0911-111-111</td>
@@ -52,7 +52,7 @@
                 <td>0912345678</td>
                 <td>bob.jpg</td>
             </tr>
-            <tr>
+            <tr class="bg-blue">
                 <td>3</td>
                 <td>cat</td>
                 <td>0933-333-333</td>
@@ -64,7 +64,7 @@
                 <td>0911-111-111</td>
                 <td>amy.jpg</td>
             </tr>
-            <tr>
+            <tr class="bg-blue">
                 <td>2</td>
                 <td>bob</td>
                 <td>0912345678</td>
@@ -76,7 +76,7 @@
                 <td>0933-333-333</td>
                 <td>cat.jpg</td>
             </tr>
-            <tr>
+            <tr class="bg-blue">
                 <td>1</td>
                 <td>amy</td>
                 <td>0911-111-111</td>
