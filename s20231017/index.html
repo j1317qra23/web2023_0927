@@ -14,9 +14,10 @@
         table,tr,td,th{
             border: 1px solid black;
             border-collapse: collapse;
+            text-align: center;
         }
         table{
-            width: 80%;
+            width: 100%;
         }
         td{
             height: 30px;
@@ -27,12 +28,26 @@
    .bg-blue{
     background-color: rgb(144, 208, 233);
    }
+    /* nth + odd or nth + even */
+    tr:nth-child(odd){
+        color: rgb(54, 224, 2);
+    }
+    tr:nth-child(1){
+        color: rgb(231, 12, 12);
+    }
+    .text-right{
+        text-align: right;
+    }
+    .text-right > a{
+        text-decoration: none;
+    }
     </style>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container text-right">
         <h3>student list</h3>
+        <a href="./create.html">add &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
         <table>
             <tr class="bg-pink">
                 <th>id</th>
@@ -44,7 +59,7 @@
                 <td>1</td>
                 <td>amy</td>
                 <td>0911-111-111</td>
-                <td>amy.jpg</td>
+                <td><img src="https://picsum.photos/id/20/100/100" alt="">amy.jpg</td>
             </tr>
             <tr>
                 <td>2</td>
