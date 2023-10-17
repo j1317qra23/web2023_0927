@@ -32,14 +32,23 @@
     tr:nth-child(odd){
         color: rgb(54, 224, 2);
     }
+    tr:nth-child(even){
+        color: rgb(79, 114, 226);
+    }
     tr:nth-child(1){
         color: rgb(231, 12, 12);
     }
     .text-right{
-        text-align: right;
+        text-align: center;
+       
+        
     }
     .text-right > a{
         text-decoration: none;
+        font-size: 24px;
+    }
+    .text-right > a:hover {
+        color: red; /*鼠标悬停时改变颜色*/
     }
     </style>
 </head>
@@ -48,6 +57,8 @@
     <div class="container text-right">
         <h3>student list</h3>
         <a href="./create.html">add &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        <a href="./edit.html">edit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        <a href="./del.html">delete &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
         <table>
             <tr class="bg-pink">
                 <th>id</th>
@@ -57,55 +68,55 @@
             </tr>
             <tr class="bg-blue">
                 <td>1</td>
-                <td>amy</td>
+                <td><a href="./edit.html?id=1">amy</a></td>
                 <td>0911-111-111</td>
                 <td><img src="https://picsum.photos/id/20/100/100" alt="">amy.jpg</td>
             </tr>
             <tr>
                 <td>2</td>
-                <td>bob</td>
+                <td><a href="./edit.html?id=2">bob</a></td>
                 <td>0912345678</td>
                 <td>bob.jpg</td>
             </tr>
             <tr class="bg-blue">
                 <td>3</td>
-                <td>cat</td>
+                <td><a href="./edit.html?id=3">cat</a></td>
                 <td>0933-333-333</td>
                 <td>cat.jpg</td>
             </tr>
             <tr>
                 <td>1</td>
-                <td>amy</td>
+                <td><a href="./edit.html?id=4">amy</a></td>
                 <td>0911-111-111</td>
                 <td>amy.jpg</td>
             </tr>
             <tr class="bg-blue">
                 <td>2</td>
-                <td>bob</td>
+                <td><a href="./edit.html?id=5">bob</a></td>
                 <td>0912345678</td>
                 <td>bob.jpg</td>
             </tr>
             <tr>
                 <td>3</td>
-                <td>cat</td>
+                <td><a href="./edit.html?id=6">cat</a></td>
                 <td>0933-333-333</td>
                 <td>cat.jpg</td>
             </tr>
             <tr class="bg-blue">
                 <td>1</td>
-                <td>amy</td>
+                <td><a href="./edit.html?id=7">amy</a></td>
                 <td>0911-111-111</td>
                 <td>amy.jpg</td>
             </tr>
             <tr>
                 <td>2</td>
-                <td>bob</td>
+                <td><a href="./edit.html?id=8">bob</a></td>
                 <td>0912345678</td>
                 <td>bob.jpg</td>
             </tr>
             <tr>
                 <td>3</td>
-                <td>cat</td>
+                <td><a href="./edit.html?id=9">cat</a></td>
                 <td>0933-333-333</td>
                 <td>cat.jpg</td>
             </tr>
