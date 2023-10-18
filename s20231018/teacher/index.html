@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .rounded-link {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 5px 10px; 
+    margin: 5px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.rounded-link:hover {
+    background-color: gray; 
+    color: white;
+}
         body {
             background-color: rgb(240, 224, 237);
         }
@@ -83,9 +98,9 @@
 
 <body>
     <div class="nav">
-        <a href="../index.html">home</a>
-        <a href="../student/index.html">students</a>
-        <a href="./index.html">teachers</a>
+        <a href="../index.html" class="rounded-link">home</a>
+        <a href="../student/index.html" class="rounded-link">students</a>
+        <a href="../teacher/index.html" class="rounded-link">teachers</a>
     </div>
     <div class="container text-right">
         <h3>teachers list</h3>
