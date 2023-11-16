@@ -36,6 +36,9 @@
       align-items: center;
       height: 236px;
     }
+    .custom-opacity {
+      opacity: 0.7; /* 设置透明度为 0.7，数值范围从 0（完全透明）到 1（完全不透明） */
+    }
   </style>
 </head>
 
@@ -49,7 +52,7 @@
     </div>
     <table class="table table-hover text-center">
       <thead>
-        <tr class="table-warning">
+        <tr class="table-warning custom-opacity">
           <th width="5%"><i class="fa-solid fa-id-card"></i></th>
           <th width="20%"><i class="fa-solid fa-image"></i></th>
           <th width="30%"><i class="fa-regular fa-comments"></i></th>
@@ -59,7 +62,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr class="table-primary">
+        <tr class="table-primary custom-opacity">
           <td>
             <div class="td-box">
               1
@@ -93,13 +96,13 @@
           </td>
           <td>
             <div class="td-box-row">
-              <a href="#" class="btn  btn-warning btn-lg"><i class="fa-regular fa-pen-to-square"></i></a>
-              <a href="#" class="btn ms-3 btn btn-danger btn-lg"><i class="fa-solid fa-trash-can"></i></a>
+              <a href="#" class="btn  btn-warning btn-lg btn-outline-primary"><i class="fa-regular fa-pen-to-square"></i></a>
+              <a href="#" class="btn ms-3 btn btn-danger btn-lg btn btn-outline-primary"><i class="fa-solid fa-trash-can"></i></a>
             </div>
           </td>
         </tr>
 
-        <tr class="table-success">
+        <tr class="table-success custom-opacity">
           <td>
             <div class="td-box">
               1
@@ -133,13 +136,14 @@
           </td>
           <td>
             <div class="td-box-row">
-              <button type="button" class="btn btn-warning">Edit</button>
-              <button type="button" class="ms-3 btn btn-danger">Del</button>
+              <a href="#" class="btn  btn-warning btn-lg btn-outline-primary"><i class="fa-regular fa-pen-to-square"></i></a>
+              <a href="#" class="btn ms-3 btn btn-danger btn-lg btn btn-outline-primary"><i class="fa-solid fa-trash-can"></i></a>
+            </div>
             </div>
           </td>
         </tr>
 
-        <tr class="table-info">
+        <tr class="table-info custom-opacity">
           <td>
             <div class="td-box">
               1
@@ -173,12 +177,13 @@
           </td>
           <td>
             <div class="td-box-row">
-              <button type="button" class="btn btn-warning">Edit</button>
-              <button type="button" class="ms-3 btn btn-danger">Del</button>
+              <a href="#" class="btn  btn-warning btn-lg btn-outline-primary"><i class="fa-regular fa-pen-to-square"></i></a>
+              <a href="#" class="btn ms-3 btn btn-danger btn-lg btn btn-outline-primary"><i class="fa-solid fa-trash-can"></i></a>
+            </div>
             </div>
           </td>
         </tr>
-        <tr class="table-Secondary">
+        <tr class="table-Secondary custom-opacity">
           <td>
             <div class="td-box">
               1
@@ -212,8 +217,9 @@
           </td>
           <td>
             <div class="td-box-row">
-              <button type="button" class="btn btn-warning">Edit</button>
-              <button type="button" class="ms-3 btn btn-danger">Del</button>
+              <a href="#" class="btn  btn-warning btn-lg btn-outline-primary"><i class="fa-regular fa-pen-to-square"></i></a>
+              <a href="#" class="btn ms-3 btn btn-danger btn-lg btn btn-outline-primary"><i class="fa-solid fa-trash-can"></i></a>
+            </div>
             </div>
           </td>
         </tr>
