@@ -43,12 +43,34 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../photo/index.html">Photos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../product/index.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
   <div class="container mt-3">
     <h2>Products</h2>
     <p>The .table-hover class enables a hover state (grey background on mouse over) on table rows:</p>
     <div class="text-end">
-      <button type="button" class="btn btn-success btn-lg"><i class="fa-solid fa-plus"></i></button>
+      <a href="./create.html" class="btn  btn-warning btn-lg btn-outline-primary"><i class="fa-solid fa-plus"></i></a>
+     
     </div>
     <table class="table table-hover text-center">
       <thead>
@@ -96,8 +118,8 @@
           </td>
           <td>
             <div class="td-box-row">
-              <a href="#" class="btn  btn-warning btn-lg btn-outline-primary"><i class="fa-regular fa-pen-to-square"></i></a>
-              <a href="#" class="btn ms-3 btn btn-danger btn-lg btn btn-outline-primary"><i class="fa-solid fa-trash-can"></i></a>
+              <a href="../product/edit.html" class="btn  btn-warning btn-lg btn-outline-primary"><i class="fa-regular fa-pen-to-square"></i></a>
+              <a href="../product/delete.html" class="btn ms-3 btn btn-danger btn-lg btn btn-outline-primary"><i class="fa-solid fa-trash-can"></i></a>
             </div>
           </td>
         </tr>
