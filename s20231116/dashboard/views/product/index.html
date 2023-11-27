@@ -140,6 +140,9 @@
           <h2>Products</h2>
           <p>The .table-hover class enables a hover state (grey background on mouse over) on table rows:</p>
           <div class="text-end">
+            <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#myModalLg">
+              add modal
+            </button>
             <a href="./create.html" class="btn  btn-warning btn-lg btn-outline-primary"><i class="fa-solid fa-plus"></i></a>
            
           </div>
@@ -320,7 +323,92 @@
       </main>
     </div>
   </div>
+ <!-- The Modal-lg -->
+ <div class="modal" id="myModalLg">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
 
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="container mt-3">
+          <div class="row">
+              <div class="col-12 col-sm-6">
+                  <div class="mb-3">
+                      <h2>Product Create</h2>
+  
+                  </div>
+              </div>
+              <div class="col-12 col-sm-6">
+                  <div class="mb-3">
+                      <a href="../product/index.html" class="btn btn-success btn-lg">&nbsp;<i class="fa-solid fa-backward"></i>&nbsp;</a>
+  
+                  </div>
+  
+              </div>
+          </div>
+          <div class="row">
+  
+              <div class="col-12 col-sm-6">
+                  <div class="mb-3 mt-3">
+                      <label for="text">File:</label>
+                      <input type="file" class="form-control" id="file" name="file">
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-12">
+                  <div class="mb-3">
+                      <label for="photoDesc">Photo Description:</label>
+                      <input type="text" class="form-control" id="photoDesc" placeholder="Enter Photo Description"
+                          name="photoDesc">
+                  </div>
+              </div>
+          </div>
+          <hr>
+          <div class="row">
+              <div class="col-12 col-sm-6">
+                  <div class="mb-3">
+                      <label for="price">Price:</label>
+                      <input type="number" class="form-control" id="price" placeholder="Enter price" name="price">
+                  </div>
+              </div>
+              <div class="col-12 col-sm-6">
+                  <div class="mb-3">
+                      <label for="unit">Unit: 單位</label>
+                      <input type="text" class="form-control" id="unit" placeholder="Enter unit" name="unit">
+                  </div>
+  
+              </div>
+          </div>
+  
+          <div class="row mt-5">
+              <div class="col-12">
+                  <div class="mb-3">
+                      <div class="d-grid gap-2">
+                          <button type="submit" class="btn btn-primary btn-lg bt-color">Submit</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </form>
+      </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- The Modal-lg end -->
 
 
   <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
