@@ -12,52 +12,54 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <style>
-  img{
+  img {
     width: 300px;
     height: 200px;
   }
 </style>
+
 <body>
   <div class="container mt-3">
-  <table class="table table-bordered align-middle text-center" >
-    <thead>
-      <tr>
-        <th scope="col">TV Shop</th>
-        <th scope="col">price</th>
-        <th scope="col">quantity</th>
-        <th scope="col">Total price</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-      
-        <th scope="row ">
-          <img src="./ipad.jpg" alt=""></th>
-        <td ><input class="form-control" type="number" id="item1Price" ></td>
-        <td><input class="form-control" type="number" id="item1Quantity"></td>
-        <td><input class="form-control" type="number" id="item1Total"></td>
-      </tr>
-      <tr>
-        <th scope="row"><img src="./tv01.jpg"alt=""></th>
-        <td><input class="form-control" type="number" id="item2Price"></td>
-        <td><input class="form-control" type="number" id="item2Quantity"></td>
-        <td><input class="form-control" type="number" id="item2Total"></td>
-      </tr>
-      <tr>
-        <th scope="row"><img src="./tv02.jpg"alt=""></th>
-        <td><input class="form-control" type="number" id="item3Price"></td>
-        <td><input class="form-control" type="number" id="item3Quantity"></td>
-        <td><input class="form-control" type="number" id="item3Total"></td>
-      </tr>
-      <tr>
-        <th scope="row"></th>
-        <td>總價超過500打八折</td>
-        <td><button type="button" id="myBtn">Calculate Total</button</td>
-        <td><input type="number" id="mySum"></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+    <table class="table table-bordered align-middle text-center">
+      <thead>
+        <tr>
+          <th scope="col">TV Shop</th>
+          <th scope="col">price</th>
+          <th scope="col">quantity</th>
+          <th scope="col">Total price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+
+          <th scope="row ">
+            <img src="./ipad.jpg" alt="">
+          </th>
+          <td><input class="form-control" type="number" id="item1Price" value="100"></td>
+          <td><input class="form-control" type="number" id="item1Quantity" value="1"></td>
+          <td><input class="form-control" type="number" id="item1Total" value="100"></td>
+        </tr>
+        <tr>
+          <th scope="row"><img src="./tv01.jpg" alt=""></th>
+          <td><input class="form-control" type="number" id="item2Price" value="100"></td>
+          <td><input class="form-control" type="number" id="item2Quantity" value="1"></td>
+          <td><input class="form-control" type="number" id="item2Total" value="100"></td>
+        </tr>
+        <tr>
+          <th scope="row"><img src="./tv02.jpg" alt=""></th>
+          <td><input class="form-control" type="number" id="item3Price" value="100"></td>
+          <td><input class="form-control" type="number" id="item3Quantity" value="1"></td>
+          <td><input class="form-control" type="number" id="item3Total" value="100"></td>
+        </tr>
+        <tr>
+          <th scope="row"></th>
+          <td>總價超過500打八折</td>
+          <td><button type="button" id="myBtn">Calculate Total</button< /td>
+          <td><input type="number" id="mySum"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
   <script>
     const item1Price = document.getElementById('item1Price');
@@ -72,42 +74,47 @@
     const myBtn = document.getElementById('myBtn');
     const mySum = document.getElementById('mySum');
 
-  
+
     function update() {
-    const num1Value = Number(item1Price.value);
-    const num2Value = Number(item1Quantity.value);
-    const total = num1Value * num2Value;
+      const num1Value = Number(item1Price.value);
+      const num2Value = Number(item1Quantity.value);
+      const total = num1Value * num2Value;
       item1Total.value = total;
-  }
-  item1Price.addEventListener('input', update);
-  item1Quantity.addEventListener('input', update);
-
-  function update2() {
-    const num3Value = Number(item2Price.value);
-    const num4Value = Number(item2Quantity.value);
-    const total = num3Value * num4Value;
+    }
+    // item1Price.addEventListener('input', update);
+    // item1Quantity.addEventListener('input', update);
+    item1Price.addEventListener('change', function () {
+      update();
+    });
+    item1Quantity.addEventListener('change', function () {
+      update();
+    });
+    function update2() {
+      const num3Value = Number(item2Price.value);
+      const num4Value = Number(item2Quantity.value);
+      const total = num3Value * num4Value;
       item2Total.value = total;
-  }
-  item2Price.addEventListener('input', update2);
-  item2Quantity.addEventListener('input', update2);
+    }
+    item2Price.addEventListener('input', update2);
+    item2Quantity.addEventListener('input', update2);
 
-  function update3() {
-    const num5Value = Number(item3Price.value);
-    const num6Value = Number(item3Quantity.value);
-    const total = num5Value * num6Value;
+    function update3() {
+      const num5Value = Number(item3Price.value);
+      const num6Value = Number(item3Quantity.value);
+      const total = num5Value * num6Value;
       item3Total.value = total;
-  }
-  item3Price.addEventListener('input', update3);
-  item3Quantity.addEventListener('input', update3);
+    }
+    item3Price.addEventListener('input', update3);
+    item3Quantity.addEventListener('input', update3);
 
-  myBtn.addEventListener('click', function () {
-    const num1 = Number(item1Total.value) ;
-    const num2 = Number(item2Total.value) ;
-    const num3 = Number(item3Total.value) ;
-    const sum = num1 + num2 + num3;
-    let result = sum >= 500 ? sum * 0.8 : sum;
-    mySum.value = result;
-  });
+    myBtn.addEventListener('click', function () {
+      const num1 = Number(item1Total.value);
+      const num2 = Number(item2Total.value);
+      const num3 = Number(item3Total.value);
+      const sum = num1 + num2 + num3;
+      let result = sum >= 500 ? sum * 0.8 : sum;
+      mySum.value = result;
+    });
   </script>
 </body>
 
