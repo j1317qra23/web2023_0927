@@ -123,7 +123,7 @@
 
         // jq parent() 找上一層
         // jq find() 往內找第一個
-
+        // this -> button parent往上一層到td 再一個parent 到tr
         let trObj = $(this).parent().parent();
         let nowPrice = trObj.find('.my-price');
         let nowNum = trObj.find('.my-num');
