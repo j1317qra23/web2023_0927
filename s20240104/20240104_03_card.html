@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>廣告文案</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .box {
+      width: 400px;
+      height: 300px;
+      background-color: lightblue;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-4">
+        <div class="d-grid gap-2">
+          <button data-price="#price1" data-ani="toggle" data-level="A" class="myBtn btn btn-primary" type="button">原價1000</button>
+        </div>
+        <div class="box" id="price1" >優惠價800 商品細節
+
+        </div>
+      </div>
+      <div class="col-12 col-sm-4">
+        <div class="d-grid gap-2">
+          <button data-price="#price2" data-ani="fadeToggle" data-level="B" class="myBtn btn btn-primary" type="button">原價1000
+          </button>
+        </div>
+        <div class="box" id="price2" >優惠價800 商品細節
+
+        </div>
+      </div>
+      <div class="col-12 col-sm-4">
+        <div class="d-grid gap-2">
+          <button data-price="#price3" data-ani="slideToggle" data-level="C" class="myBtn btn btn-primary" type="button">原價1000
+          </button>
+        </div>
+        <div class="box" id="price3" >優惠價800 商品細節
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+   $(document).ready(function () {
+  const myBtn = $('.myBtn');
+
+  myBtn.click(function () {
+    let getDataPrice = $(this).attr('data-price');
+    let getDataAni = $(this).attr('data-ani');
+    let getDataLevel = $(this).attr('data-level');
+    let originalPrice = 1000;
+
+    switch (getDataLevel) {
+      case 'A':
+        originalPrice *= 0.9; // 10% discount for level A
+        break;
+      case 'B':
+        originalPrice *= 0.8; // 20% discount for level B
+        break;
+      case 'C':
+        originalPrice *= 0.7; // 30% discount for level C
+        break;
+      default:
+        break;
+    }
+
+    console.log('Original Price:', originalPrice);
+
+    switch (getDataAni) {
+      case 'toggle':
+        $(getDataPrice).text('優惠價' + originalPrice + ' 商品細節').toggle(3000);
+        break;
+      case 'fadeToggle':
+        $(getDataPrice).text('優惠價' + originalPrice + ' 商品細節').fadeToggle(3000);
+        break;
+      case 'slideToggle':
+        $(getDataPrice).text('優惠價' + originalPrice + ' 商品細節').slideToggle(3000);
+        break;
+      default:
+        break;
+    }
+
+  });
+
+});
+
+  </script>
+</body>
+
+</html>
