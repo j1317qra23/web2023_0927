@@ -64,11 +64,17 @@
 
       mySpan.click(function (e) {
         console.log('mySpan ok');
-        // console.log(this, 'this');
+        console.log(this, 'this');
         // console.log($(this), '$(this)');
         let nowElement = $(this).parent();
         console.log('nowElement', nowElement);
-        nowElement.attr('class', 'text-danger');
+        // nowElement.addClass('text-danger');
+        let getClassText = nowElement.attr('class');
+        getClassText = getClassText + ' text-danger';
+        console.log('getClassText', getClassText);
+        // nowElement.attr('class', 'mySpan border border-danger p-3 text-danger');
+        nowElement.attr('class', getClassText);
+
 
 
       });
