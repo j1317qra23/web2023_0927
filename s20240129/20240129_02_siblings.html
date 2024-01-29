@@ -18,11 +18,11 @@
       <div class="col">
         <div class="box">
           <ul id="myUl">
-            <li>11</li>
-            <li>22</li>
-            <li id="li33">33</li>
-            <li>44</li>
-            <li>55</li>
+            <li class="myLi">11</li>
+            <li class="myLi">22</li>
+            <li class="myLi">33</li>
+            <li class="myLi">44</li>
+            <li class="myLi">55</li>
           </ul>
         </div>
       </div>
@@ -36,13 +36,14 @@
 
   <script>
     $(document).ready(function () {
-      const li33 = $('#li33');
-      li33.click(function (e) {
-        let otherLi = li33.siblings();
-        console.log('otherLi', otherLi);
-        li33.attr('class', 'text-danger');
-        otherLi.attr('class', 'text-primary');
+      const myLi = $('.myLi');
+      myLi.click(function (e) {
+        console.log('this', this);
 
+        let otherLi = $(this).siblings();
+        // console.log('otherLi', otherLi);
+        $(this).attr('class', 'text-danger');
+        otherLi.attr('class', 'text-primary');
 
       });
 
