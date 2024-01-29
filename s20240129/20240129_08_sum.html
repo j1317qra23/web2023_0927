@@ -105,16 +105,14 @@
         let myTotal = $('.myTotal');
         let getMyTotalCount = myTotal.length;
         console.log('myTotal', myTotal);
-        if (getMyTotalCount > 0) {
-          let sum = 0;
-          myTotal.each(function (index, value) {
-            console.log('index', index);
-            console.log('value', value);
-            sum = sum + Number($(value).text());
-          });
-          console.log('final sum', sum);
-          mySum.text(sum);
-        }
+        let sum = 0;
+        myTotal.each(function (index, value) {
+          console.log('index', index);
+          console.log('value', value);
+          sum = sum + Number($(value).text());
+        });
+        console.log('final sum', sum);
+        mySum.text(sum);
       }
 
 
@@ -122,6 +120,8 @@
         console.log('del ok');
         let nowTr = $(nowThis).parent().parent();
         nowTr.remove();
+        sumFun();
+
 
         // 抓tr數量
         // 如果tr <=2 不能刪除
@@ -143,6 +143,7 @@
         let nowTr = $(nowThis).parent().parent();
         // nowTr.clone(true).appendTo("tbody");
         nowTr.clone(true).insertAfter(nowTr);
+        sumFun();
       }
 
       const myBtn = $('.myBtn');
