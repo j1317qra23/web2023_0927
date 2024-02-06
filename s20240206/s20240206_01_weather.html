@@ -13,7 +13,24 @@
 </head>
 
 <body>
-
+  <ol id="myol">
+   
+  </ol>
+  <table class="table table-hover" id="myTable">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>123</th>
+        <th>444</th>
+      </tr>
+    </tbody>
+    
+  </table>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -26,7 +43,8 @@
   <script>
     $(document).ready(function () {
       let url = weatherUrl;
-
+      const myol = $('#myol')
+      const myTable = $('#myTable')
       $.ajax({
         type: "get",
         url: url,
@@ -34,7 +52,17 @@
         // dataType: "dataType",
         success: function (res) {
           console.log('res', res);
-
+          let nowLocation = res.records.location;
+          $.each(nowLocation, function (key, value) { 
+            let nowLocationName = value.locationName;
+            let content = `
+            <li> ${nowLocationName} </li>
+            `;
+            // console.log('key', key);
+            // console.log('value', value);
+            myol.append(content);
+          
+          });
         }
       });
     });
